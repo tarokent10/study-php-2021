@@ -16,9 +16,9 @@ class TaskSheet
     {
         foreach ($this->tasks as $task) {
             if ($task->isCompleted()) {
-                echo "<b>", $task->name, "</b>", PHP_EOL;
+                echo "<b>", $task->name, "</b> 優先度: ", $task->getPriorityAsString(), PHP_EOL;
             } else {
-                echo $task->name, PHP_EOL;
+                echo $task->name, " 優先度: ", $task->getPriorityAsString(), PHP_EOL;
             }
         }
     }

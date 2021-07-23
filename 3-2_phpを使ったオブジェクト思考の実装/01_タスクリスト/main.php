@@ -5,10 +5,10 @@ declare(strict_types=1);
 require_once dirname(__FILE__) . "/Task.php";
 require_once dirname(__FILE__) . "/TaskSheet.php";
 
-$task = new Task("パスポートの更新");
+$task = new Task("パスポートの更新", Task::PRIORITY_HIGH);
 $task->progress = 100;
 
-$task2 = new Task("食材の買い出し");
+$task2 = new Task("食材の買い出し", Task::PRIORITY_LOW);
 $task2->progress = 50;
 
 $taskSheet = new TaskSheet();

@@ -16,6 +16,6 @@ class TaxCalculator
 
     public function reset(): void
     {
-        $this->lastCalculated = null;
+        $this->lastCalculated = 0;
     }
 }
